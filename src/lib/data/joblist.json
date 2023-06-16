@@ -1,0 +1,50 @@
+[
+	{
+		"name": "TechAffinity",
+		"jobposition": "Software Engineer",
+		"location": "Remote",
+		"description": "We are looking for a Software Engineer to join our team. The ideal candidate will have experience in Java, Python, or other programming languages. They will also be familiar with software development methodologies and tools. The Software Engineer will be responsible for developing, testing, and deploying software applications. They will also work with other members of the team to design and implement new features."
+	},
+	{
+		"name": "STIC Consultant Company",
+		"jobposition": "Cyber Security Analyst",
+		"location": "Kigali",
+		"description": "We are looking for a Cyber Security Analyst to join our team. The ideal candidate will have experience in penetration testing, vulnerability assessment, and incident response. They will also have a strong understanding of security best practices and industry standards. The Cyber Security Analyst will be responsible for protecting our company's systems and data from cyberattacks. They will also work with other members of the team to develop and implement security policies and procedures."
+	},
+	{
+		"name": "UNITECH",
+		"jobposition": "Web Developer",
+		"location": "Kigali",
+		"description": "We are looking for a Web Developer to join our team. The ideal candidate will have experience in HTML, CSS, and JavaScript. They will also be familiar with web development frameworks and tools. The Web Developer will be responsible for developing and maintaining our company's website. They will also work with other members of the team to design and implement new features."
+	},
+	{
+		"name": "Niyox",
+		"jobposition": "Systems Administrator",
+		"location": "Kigali",
+		"description": "We are looking for a Systems Administrator to join our team. The ideal candidate will have experience in managing and maintaining computer systems. They will also be familiar with network administration and security. The Systems Administrator will be responsible for keeping our company's systems up and running. They will also work with other members of the team to troubleshoot problems and implement new solutions."
+	},
+	{
+		"name": "WashaHost",
+		"jobposition": "Customer Support Representative",
+		"location": "Kigali",
+		"description": "We are looking for a Customer Support Representative to join our team. The ideal candidate will have excellent communication skills and be able to work independently. They will also be familiar with our company's products and services. The Customer Support Representative will be responsible for providing support to our customers. They will also work with other members of the team to resolve customer issues."
+	},
+	{
+		"name": "Diolichat",
+		"jobposition": "Chatbot Developer",
+		"location": "Kigali",
+		"description": "We are looking for a Chatbot Developer to join our team. The ideal candidate will have experience in developing chatbots using natural language processing and machine learning technologies. They will also be familiar with chatbot development frameworks and tools. The Chatbot Developer will be responsible for developing and maintaining our company's chatbots. They will also work with other members of the team to design and implement new features."
+	},
+	{
+		"name": "Innovex",
+		"jobposition": "Data Scientist",
+		"location": "Kigali",
+		"description": "We are looking for a Data Scientist to join our team. The ideal candidate will have experience in collecting, cleaning, and analyzing data. They will also be familiar with data science tools and techniques. The Data Scientist will be responsible for developing and implementing data-driven solutions to our company's business problems. They will also work with other members of the team to design and implement new features."
+	},
+	{
+		"name": "U-Space",
+		"jobposition": "Software Architect",
+		"location": "Kigali",
+		"description": "We are looking for a Software Architect to join our team. The ideal candidate will have experience in designing and architecting software systems. They will also be familiar with software architecture principles and patterns. The Software Architect will be responsible for designing and implementing our company's software systems. They will also work with other members of the team to ensure that the systems are scalable, reliable, and secure."
+	}
+]
