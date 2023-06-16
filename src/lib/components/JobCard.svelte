@@ -22,7 +22,7 @@
 				<h3 class="text-xl font-bold text-gray-900">
 					{job.title}
 				</h3>
-				<p class="mt-2 text-sm text-gray-500 text-ellipsis">
+				<p class="mt-2 text-sm text-gray-500 truncate">
 					{job.description}
 				</p>
 				<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />

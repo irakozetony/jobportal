@@ -41,6 +41,6 @@ export const actions = {
 			maxAge: 60 * 60 * 24
 		});
 		if (user?.role === 'admin') throw redirect(303, '/dashboard');
-		if (user?.role === 'employer') throw redirect(303, '/employer/jobs');
+		if (user?.role === 'employer') throw redirect(303, '/employer/jobs.svg');
 	}
 };
