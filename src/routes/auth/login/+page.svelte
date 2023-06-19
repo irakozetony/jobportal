@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+	import type { PageData } from '../../../../.svelte-kit/types/src/routes';
 	import { superForm } from 'sveltekit-superforms/client';
 	import { loginSchema } from '$lib/validation/user.validation';
 	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
@@ -19,7 +19,7 @@
 	});
 </script>
 
-<SuperDebug data={$form} />
+<!--<SuperDebug data={$form} />-->
 <Toast position="br" />
 <section
 	class="border border-gray-300 w-fit shadow-md mx-auto align-middle p-5 rounded font-roboto h-fit my-auto mt-32"

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { superForm } from 'sveltekit-superforms/client';
 	import { signupSchema } from '$lib/validation/user.validation';
-	import type { PageData } from './$types';
+	import type { PageData } from '../../../../.svelte-kit/types/src/routes';
 	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 	import { Toast, toastStore } from '@skeletonlabs/skeleton';
 	import type { ToastSettings } from '@skeletonlabs/skeleton';
@@ -19,7 +19,7 @@
 	});
 </script>
 
-<SuperDebug data={$form} />
+<!--<SuperDebug data={$form} />-->
 <Toast position="br" />
 
 <section

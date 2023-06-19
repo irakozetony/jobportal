@@ -1,7 +1,7 @@
 import { signupSchema } from '$lib/validation/user.validation';
 import { superValidate } from 'sveltekit-superforms/server';
-import type { Actions, RequestEvent } from './$types';
-import { error, fail, redirect } from '@sveltejs/kit';
+import type {Actions, RequestEvent} from '@sveltejs/kit'
+import {error, fail, redirect } from '@sveltejs/kit';
 import { isRegistered } from '$lib/utils/user.utils';
 import prisma from '$lib/prisma';
 import { hashPassword } from '$lib/utils/bcrypt.utils';
