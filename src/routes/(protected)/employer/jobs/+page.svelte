@@ -15,14 +15,14 @@
     export let data: PageData;
     const {role} = data;
 </script>
-<section class="p-24  bg-red-500 flex flex-wrap">
+<section class="p-24 flex flex-col">
     <button
             on:click={handleOpenDrawer}
             class="btn btn-sm bg-black w-fit rounded-full text-white mb-6"
             data-sveltekit-preload-data="hover">Add
     </button
     >
-    <div class="bg-green-400">
+    <div class="grid grid-cols-3 justify-between gap-6">
         {#each data?.jobs as job (job.id)}
             <JobCard {job} {role}/>
         {/each}
