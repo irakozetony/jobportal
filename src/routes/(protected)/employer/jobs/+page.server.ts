@@ -26,7 +26,6 @@ export const load = (async ({cookies}) => {
 
 export const actions = {
     create: async (event: RequestEvent) => {
-        console.log('ACTION CALLED');
         const form = await superValidate(event, jobSchema);
         if (!form.valid) return fail(400, {form});
         const token = event.cookies.get("token");
@@ -38,5 +37,12 @@ export const actions = {
             data: {...form.data, employerId: id}
         });
         throw redirect(303, '/employer/jobs');
+    },
+    delete: async(event: RequestEvent)=>{
+        const data = await event.request.formData();
+        const id = data.get('id')?.toString();
+        await prisma.job.delete({
+            where: {id}
+        });
     }
 }
