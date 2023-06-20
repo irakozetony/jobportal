@@ -2,7 +2,6 @@
 	import { superForm } from 'sveltekit-superforms/client';
 	import { signupSchema } from '$lib/validation/user.validation';
 	import type { PageData } from '../../../../.svelte-kit/types/src/routes';
-	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 	import { Toast, toastStore } from '@skeletonlabs/skeleton';
 	import type { ToastSettings } from '@skeletonlabs/skeleton';
 
@@ -67,22 +66,6 @@
 			{/if}
 		</div>
 		<div>
-			<label class="label" for="company">
-				<span>Company name</span>
-				<input
-					class={$errors.company ? 'input-error block w-full' : 'input'}
-					type="text"
-					placeholder="Company Inc"
-					name="company"
-					id="company"
-					bind:value={$form.company}
-				/>
-			</label>
-			{#if $errors.company}
-				<small class="text-red-600">{$errors.company}</small>
-			{/if}
-		</div>
-		<div>
 			<label class="label" for="email">
 				<span>Email</span>
 				<input
@@ -120,6 +103,6 @@
 
 	<div class="flex flex-col justify-center items-center">
 		<p class="text-gray-500">Already have an account?</p>
-		<a href="/login" class="block text-blue-700">Log in</a>
+		<a href="/auth/login" class="block text-blue-700">Log in</a>
 	</div>
 </section>

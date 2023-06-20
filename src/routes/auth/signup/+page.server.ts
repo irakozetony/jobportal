@@ -19,6 +19,6 @@ export const actions = {
 		await prisma.user.create({
 			data: { ...form.data, role: 'employer', password }
 		});
-		throw redirect(303, '/login');
+		throw redirect(303, '/auth/login');
 	}
 } satisfies Actions;

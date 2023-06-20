@@ -1,5 +1,9 @@
+<script lang="ts">
+    import { enhance } from "$app/forms";
+</script>
+<div class="absolute top-[50%] translate-y-[-50%]">
 <aside
-        class="flex flex-col items-center bg-white text-gray-700 shadow h-full">
+        class="flex flex-col items-center bg-white text-gray-700 shadow h-full my-auto w-fit">
     <!-- Side Nav Bar-->
 
     <div class="h-16 flex items-center w-full">
@@ -17,7 +21,7 @@
         <li class="hover:bg-gray-100">
             <a
                     href="."
-                    class="h-16 px-6 flex flex justify-center items-center w-full
+                    class="h-16 px-6 flex justify-center items-center w-full
 					focus:text-orange-500">
                 <svg
                         class="h-5 w-5"
@@ -44,7 +48,7 @@
         <li class="hover:bg-gray-100">
             <a
                     href="."
-                    class="h-16 px-6 flex flex justify-center items-center w-full
+                    class="h-16 px-6 flex justify-center items-center w-full
 					focus:text-orange-500">
                 <svg
                         class="h-5 w-5"
@@ -67,7 +71,7 @@
         <li class="hover:bg-gray-100">
             <a
                     href="."
-                    class="h-16 px-6 flex flex justify-center items-center w-full
+                    class="h-16 px-6 flex justify-center items-center w-full
 					focus:text-orange-500">
 
                 <svg
@@ -93,7 +97,7 @@
         <li class="hover:bg-gray-100">
             <a
                     href="."
-                    class="h-16 px-6 flex flex justify-center items-center w-full
+                    class="h-16 px-6 flex justify-center items-center w-full
 					focus:text-orange-500">
                 <svg
                         class="h-5 w-5"
@@ -119,7 +123,7 @@
         <li class="hover:bg-gray-100">
             <a
                     href="."
-                    class="h-16 px-6 flex flex justify-center items-center w-full
+                    class="h-16 px-6 flex justify-center items-center w-full
 					focus:text-orange-500">
                 <svg
                         class="h-5 w-5"
@@ -156,7 +160,7 @@
         <li class="hover:bg-gray-100">
             <a
                     href="."
-                    class="h-16 px-6 flex flex justify-center items-center w-full
+                    class="h-16 px-6 flex justify-center items-center w-full
 					focus:text-orange-500">
                 <svg
                         class="h-5 w-5"
@@ -180,9 +184,11 @@
 
     <div class="mt-auto h-16 flex items-center w-full">
         <!-- Action Section -->
+        <form action="/auth/logout?" method="post" use:enhance class="focus:text-orange-500 hover:bg-red-200 focus:outline-none w-full">
         <button
-                class="h-16 w-10 mx-auto flex flex justify-center items-center
-				w-full focus:text-orange-500 hover:bg-red-200 focus:outline-none">
+                class="h-16 flex justify-center items-center mx-auto"
+                type="submit"
+                >
             <svg
                     class="h-5 w-5 text-red-700"
                     xmlns="http://www.w3.org/2000/svg"
@@ -200,6 +206,8 @@
             </svg>
 
         </button>
+        </form>
     </div>
 
 </aside>
+</div>

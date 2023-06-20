@@ -1,8 +1,7 @@
 <script lang="ts">
-	import type { PageData } from '../../../../.svelte-kit/types/src/routes';
+	import type { PageData } from './$types';
 	import { superForm } from 'sveltekit-superforms/client';
 	import { loginSchema } from '$lib/validation/user.validation';
-	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 	import type { ToastSettings } from '@skeletonlabs/skeleton';
 	import { Toast, toastStore } from '@skeletonlabs/skeleton';
 	export let data: PageData;
@@ -90,6 +89,6 @@
 
 	<div class="flex flex-col justify-center items-center">
 		<p class="text-gray-500">Don't have an account?</p>
-		<a href="/signup" class="block text-blue-700">Sign up</a>
+		<a href="/auth/signup" class="block text-blue-700">Sign up</a>
 	</div>
 </section>

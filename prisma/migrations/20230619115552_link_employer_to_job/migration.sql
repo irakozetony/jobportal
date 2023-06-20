@@ -9,9 +9,11 @@ CREATE TABLE "Job" (
     "location" TEXT NOT NULL,
     "salary" TEXT NOT NULL,
     "company" TEXT NOT NULL,
+    "employerId" TEXT NOT NULL,
     "deadline" DATETIME NOT NULL,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "updatedAt" DATETIME NOT NULL
+    "updatedAt" DATETIME NOT NULL,
+    CONSTRAINT "Job_employerId_fkey" FOREIGN KEY ("employerId") REFERENCES "User" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 -- CreateTable

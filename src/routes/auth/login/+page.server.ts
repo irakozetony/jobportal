@@ -1,4 +1,4 @@
-import type { RequestEvent } from '../../../../.svelte-kit/types/src/routes';
+import type { RequestEvent } from './$types';
 import { superValidate } from 'sveltekit-superforms/server';
 import { loginSchema } from '$lib/validation/user.validation';
 import { error, fail, redirect } from '@sveltejs/kit';
@@ -40,7 +40,7 @@ export const actions = {
 			sameSite: true,
 			maxAge: 60 * 60 * 24
 		});
-		if (user?.role === 'admin') throw redirect(303, '/dashboard');
+		if (user?.role === 'admin') throw redirect(303, '/users');
 		if (user?.role === 'employer') throw redirect(303, '/employer/jobs');
 	}
 };

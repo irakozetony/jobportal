@@ -10,7 +10,6 @@ export const handle: Handle = async ({ event, resolve }) => {
 	if (path?.includes('protected') && !token) {
 		throw redirect(303, '/auth/login');
 	}
-
 	if (path?.includes('admin')) {
 		try {
 			const userData = jwt.verify(token, JWT_SECRET);

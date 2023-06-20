@@ -20,6 +20,8 @@ model Job {
   location         String
   salary           String
   company          String
+  employer         User     @relation(fields: [employerId], references: [id])
+  employerId       String
   deadline         DateTime
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt
@@ -30,8 +32,8 @@ model User {
   full_name String
   email     String   @unique
   password  String
-  company   String
   role      String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  Job       Job[]
 }

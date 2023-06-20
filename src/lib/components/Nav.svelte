@@ -1,23 +1,7 @@
 <script lang="ts">
-    import { page } from '$app/stores';
+    import {page} from '$app/stores';
     import {enhance} from "$app/forms";
 
-    export const handleLogout = async ({event}) =>{
-        try{
-            console.log('CALLING HANDLE LOGOUT');
-            console.log(event)
-            // const {cookies} = session;
-            // console.log(cookies);
-            // const token = cookies.get('token');
-            // if(!token)
-            //     return goto('/login');
-            // cookies.delete('token');
-            // return goto('/login');
-        }
-        catch (error){
-            console.log(error);
-        }
-    }
     $:path = $page.route.id;
     export let data: {
         isLoggedIn: boolean,
@@ -38,7 +22,7 @@
         </svg>
         <a href="/" class="font-semibold text-xl tracking-tight">Job Finder</a>
     </div>
-    <div>
+    <div class="flex items-center">
         {#if !data.isLoggedIn}
             <a
                     href="/auth/signup"
@@ -46,13 +30,12 @@
             >Sign up</a
             >
         {:else}
-            {#if !path.includes('dashboard') && !path.includes('employer')}
-            <a href="/dashboard" class="mr-8 font-bold">Dashboard</a>
-            {/if}
+            <a href="/employer/jobs" class="mr-8 font-bold">Dashboard</a>
             <form action="/auth/logout?" method="post" use:enhance>
-            <button type="submit" class="btn btn-xl border border-black font-bold w-fit rounded-full hover:bg-black hover:text-white">
-                Log out
-            </button>
+                <button type="submit"
+                        class="btn btn-xl border border-black font-bold w-fit rounded-full hover:bg-black hover:text-white">
+                    Log out
+                </button>
             </form>
         {/if}
     </div>
